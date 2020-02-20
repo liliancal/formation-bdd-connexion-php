@@ -14,3 +14,7 @@ $requete = $bdd->prepare("<votrerequete>");
 $requete->bindParam(':param', $param);
 $requete->execute();
 $resultat = $requete->fetchAll();
+
+echo '<pre>';
+print_r($resultat);
+echo '</pre>';
